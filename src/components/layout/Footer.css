@@ -2,10 +2,17 @@
     padding: 1rem 0;
 }
 
-.footer-text{
+.footer-text {
     color: #A3B5A3;
     font-size: 15px;
     font-style: italic;
     display: flex;
     justify-content: center;
+}
+
+.footer-widgets {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
 }
