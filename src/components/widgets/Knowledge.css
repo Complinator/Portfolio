@@ -1,0 +1,117 @@
+.icon-with-text {
+    display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-with-text:hover {
+    width: 200px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.icon-with-text:hover .icon-container {
+    transform: translateX(10px) rotate(5deg);
+}
+
+.icon-svg {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.icon-with-text:hover .icon-svg {
+    transform: scale(1.1);
+}
+
+.text-container {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.icon-with-text:hover .text-container {
+    opacity: 1;
+    left: 50px;
+    pointer-events: auto;
+}
+
+.icon-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transform: translateX(-20px);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.icon-with-text:hover .icon-text {
+    transform: translateX(0);
+}
+
+.icon-with-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 0;
+}
+
+.icon-with-text:hover::before {
+    width: 150px;
+}
+
+.icon-text {
+    display: inline-block;
+}
+
+.icon-with-text:hover .icon-text {
+    animation: slideInFromBehind 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideInFromBehind {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) scale(0.8);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(-10px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
