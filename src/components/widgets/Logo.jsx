@@ -7,10 +7,9 @@ function Logo({ svgPath, text, altText = "Icon", link }) {
 
     useEffect(() => {
         if (textRef.current) {
-            // Measure the actual text width more accurately
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
-            context.font = '14px system-ui, -apple-system, sans-serif'; // Match your text font
+            context.font = '14px system-ui, -apple-system, sans-serif';
             const measuredWidth = context.measureText(text).width;
             setTextWidth(measuredWidth);
         }
@@ -27,7 +26,7 @@ function Logo({ svgPath, text, altText = "Icon", link }) {
             className="icon-with-text" 
             onClick={handleClick}
             style={{ 
-                '--expanded-width': `${50 + textWidth + 20}px` // Icon width + text width + minimal padding
+                '--expanded-width': `${50 + textWidth + 20}px`
             }}
         >
             <div className="icon-container">
