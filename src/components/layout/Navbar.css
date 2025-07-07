@@ -17,4 +17,19 @@
 .navbar-title {
     font-size: 1.5rem;
     font-weight: 600;
+    color: #fff;
+    padding-top: 4px;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: #d8d8d8;
+    font-size: 1.2rem;
+    height: fit-content;
 }
