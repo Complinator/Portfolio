@@ -1,31 +1,35 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
 import './App.css'
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Home from "./components/views/Home";
+import About from "./components/views/About";
+import Awards from "./components/views/Awards";
+import Blogs from "./components/views/Blogs";
+import Blog from "./components/views/Blog";
+import Experience from "./components/views/Experience";
+import Projects from "./components/views/Projects";
+import Project from "./components/views/Project";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src="https://reactjs.org/logo-og.png" className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='app'>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/awards" element={<Awards />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project" element={<Project />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   )
 }
