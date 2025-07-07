@@ -165,8 +165,8 @@
 /* Smooth focus states for accessibility */
 .navbar-logo:focus,
 .navbar-links a:focus {
-    outline: 2px solid #A3B5A3;
-    outline-offset: 2px;
+    /* outline: 2px solid #A3B5A3;
+    outline-offset: 2px; */
     transition: outline 0.2s ease;
 }
 

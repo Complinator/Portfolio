@@ -1,4 +1,4 @@
-
+import "./Views.css";
 
 function Home() {
     return(
