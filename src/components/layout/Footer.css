@@ -1,0 +1,11 @@
+.footer {
+    padding: 1rem 0;
+}
+
+.footer-text{
+    color: #A3B5A3;
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
