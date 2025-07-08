@@ -22,3 +22,55 @@
     color: #fff;
     font-size: 1rem;
 }
+
+.experience {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(28, 38, 28, 0.9);
+    color: #A3B5A3;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    z-index: 1000;
+    border: 1px solid rgba(163, 181, 163, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeInIndicator 0.3s ease;
+}
+
+.indicator-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.indicator-text::before {
+    content: '⚈';
+    color: #A3B5A3;
+    animation: pulse 2s infinite;
+}
+
+@keyframes fadeInIndicator {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
