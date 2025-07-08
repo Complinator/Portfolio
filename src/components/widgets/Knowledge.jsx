@@ -2,12 +2,12 @@ import "./Knowledge.css";
 
 function Knowledge({ svgPath, text }) {
     return (
-        <div className="icon-with-text">
-            <div className="icon-container">
-                <img src={svgPath} alt="Icon" className="icon-svg" />
+        <div className="knowledge-icon-with-text">
+            <div className="knowledge-icon-container">
+                <img src={svgPath} alt="Icon" className="knowledge-icon-svg" />
             </div>
-            <div className="text-container">
-                <span className="icon-text">{text}</span>
+            <div className="knowledge-text-container">
+                <span className="knowledge-icon-text">{text}</span>
             </div>
         </div>
     );

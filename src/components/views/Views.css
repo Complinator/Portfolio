@@ -4,3 +4,21 @@
     color: #fff;
     transition: color 0.3s ease-in-out;
 }
+
+.subtitle {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.smooth-text {
+    color: #A2B4A2;
+    font-size: 1rem;
+}
+
+.text {
+    text-justify: justify;
+    color: #fff;
+    font-size: 1rem;
+}

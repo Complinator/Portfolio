@@ -23,17 +23,17 @@ function Logo({ svgPath, text, altText = "Icon", link }) {
 
     return (
         <div 
-            className="icon-with-text" 
+            className="logo-icon-with-text" 
             onClick={handleClick}
             style={{ 
                 '--expanded-width': `${50 + textWidth + 20}px`
             }}
         >
-            <div className="icon-container">
-                <img src={svgPath} alt={altText} className="icon-svg" />
+            <div className="logo-icon-container">
+                <img src={svgPath} alt={altText} className="logo-icon-svg" />
             </div>
-            <div className="text-container">
-                <span className="icon-text" ref={textRef}>{text}</span>
+            <div className="logo-text-container">
+                <span className="logo-icon-text" ref={textRef}>{text}</span>
             </div>
         </div>
     );

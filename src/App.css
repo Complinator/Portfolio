@@ -5,6 +5,7 @@
   background: #121712;
   background: rgba(18, 23, 18, 1) 0%;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .app {
