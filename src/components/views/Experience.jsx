@@ -14,7 +14,7 @@ function Experience() {
                 "Science Fair First Place",
                 "Student Council Member"
             ],
-            svgPath: "./src/assets/Logos/Content/Bag.svg"
+            svgPath: "./src/assets/Logos/Content/Study.svg"
         },
         {
             id: "civil-engineering",
@@ -69,7 +69,7 @@ function Experience() {
                 "Conference Presentation Speaker",
                 "Graduate Research Grant Recipient"
             ],
-            svgPath: "./src/assets/Logos/Content/Bag.svg"
+            svgPath: "./src/assets/Logos/Content/Research.svg"
         }
     ];
 
