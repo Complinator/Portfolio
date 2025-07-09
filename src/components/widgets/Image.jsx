@@ -5,7 +5,7 @@ function ImageWidget() {
         <div className="image-widget">
             <div className="image-container">
                 <img 
-                    src="./src/assets/Content/ProfilePicture.jpeg" 
+                    src="./assets/Content/ProfilePicture.jpeg" 
                     alt="Profile" 
                     className="image-widget-circle" 
                 />

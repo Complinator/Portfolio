@@ -7,7 +7,7 @@ function Navbar() {
         <div className="navbar">
             <div className="navbar-content">
                 <Link to="/" className="navbar-logo">
-                        <img src="/src/assets/Logos/Content/Portfolio.svg" alt="Logo" height="22px" />
+                        <img src="/assets/Logos/Content/Portfolio.svg" alt="Logo" height="22px" />
                         <div className="navbar-title">
                             <span>DevPortfolio</span>
                         </div>
